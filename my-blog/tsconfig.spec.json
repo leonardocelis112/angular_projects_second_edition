@@ -2,10 +2,14 @@
 {
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    "experimentalDecorators": true,
     "outDir": "./out-tsc/spec",
     "types": [
       "jasmine"
     ]
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true,
   },
   "files": [
     "src/test.ts",
